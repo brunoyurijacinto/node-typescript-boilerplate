@@ -5,4 +5,4 @@ on:
 
 jobs:
   continous-delivery:
-    uses: brunoyurijacinto/my-workflows/push-workflows/action.yml@main
+    uses: brunoyurijacinto/my-workflows/.github/workflows/cd/action.yml@main
