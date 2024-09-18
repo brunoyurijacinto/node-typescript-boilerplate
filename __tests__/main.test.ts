@@ -26,6 +26,8 @@ describe('greeter function', () => {
     timeoutSpy.mockRestore();
   });
 
+
+
   // Assert if setTimeout was called properly
   it('delays the greeting by 2 seconds', () => {
     expect(setTimeout).toHaveBeenCalledTimes(1);
