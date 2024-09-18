@@ -42,5 +42,10 @@ describe('greeter function', () => {
     expect(hello).toBe(`Hello, ${name}`);
   });
 
+  // Assert greeter result
+  it('greets a user with `Helloa, {name}` message', () => {
+    expect(hello).toBe(`Hello, ${name}`);
+  });
+
 
 });
