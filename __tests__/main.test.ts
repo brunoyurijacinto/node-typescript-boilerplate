@@ -26,6 +26,8 @@ describe('greeter function', () => {
     timeoutSpy.mockRestore();
   });
 
+
+
   // Assert if setTimeout was called properly
   it('delays the greeting by 2 seconds', () => {
     expect(setTimeout).toHaveBeenCalledTimes(1);
@@ -41,11 +43,9 @@ describe('greeter function', () => {
   });
 
   // Assert greeter result
-  it('Error test to poc', () => {
-    expect(hello).toBe(`Error, ${name}`);
+  it('greets a user with `, {name}`', () => {
+    expect(hello).toBe(`Hello, ${name}`);
   });
-  // Assert greeter result
-  it('Error test to poc 2', () => {
-    expect(hello).toBe(`Error, ${name}`);
-  });
+
+
 });
