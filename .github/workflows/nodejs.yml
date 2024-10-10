@@ -1,18 +1,8 @@
-name: Node.js CI
+name: 48 - Trigger reusables
 
 on:
-  pull_request:
+  push:
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-      - uses: volta-cli/action@v1
-      - run: npm ci --no-audit
-      - run: npm run lint --if-present
-      - run: npm test
-      - run: npm run build --if-present
-        env:
-          CI: true
+  continous-delivery:
+    uses: brunoyurijacinto/my-workflows/.github/workflows/action.yml@main
